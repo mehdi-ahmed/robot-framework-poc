@@ -1,0 +1,77 @@
+ROBOT
+-----
+
+	- Robot is a wrapper built on top of Selenium.
+
+1- Install python 3.10 and add it to you PATH
+2- Install pip
+
+	- $ python -m pip install --upgrade pip
+
+3- Install Selenium:
+	- pip3 install robotframework-seleniumlibrary
+	
+	- pip install --upgrade robotframework-seleniumlibrary
+	(https://github.com/robotframework/SeleniumLibrary)
+
+
+4- Install HTTP RequestsLibrary:
+	- pip install robotframework-requests 
+
+
+5- Install Selenuim Browserdriver for the browsers
+	- Chrome? Firefox? etc.
+	- https://www.selenium.dev/downloads/
+	- Check with your Chome version
+	- Add it to Path(only folder not the .exe)
+
+
+6- Intellij IDEA:
+	- Install IntelliBot - patched
+	- Install  Python plugin
+	- Setup https://github.com/mtrubs/intellibot/wiki/Python-Interpreter
+	- Install SeleniumLibrary: Project > right click> open project settings > Plateform Settings > SDK > Packages:
+
+		- selenium
+		- selenium robot
+		- robot
+
+	- Modern plugin: Robot Framework Support
+
+	https://plugins.jetbrains.com/plugin/7415-robot-framework-support
+
+	virtualenv(recommended) ??
+
+
+----------
+To run a test:
+	- Terminal
+
+	> robot -d Results .\Tests\google\FunctionalTestSuite\GoogleSearch.robot
+
+
+
+# Selenium Library
+	keywords: Open Browser
+	Keywords: Title Should be
+		    Input Text
+# https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Open%20Browser
+
+# Always two spaces
+# Letters should be UpperCase
+
+
+good links
+https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Selenium%20speed
+https://github.com/robotframework/WebDemo/blob/master/login_tests/resource.robot
+https://github.com/robotframework/SeleniumLibrary
+
+DEMO App
+-----
+http://localhost:7272/
+
+C:\work\tutorials\robot-framework\demo-project\WebDemo>python demoapp/server.py
+
+video tutos
+https://www.youtube.com/watch?v=paMrZeoSARM&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=7
+https://testersdock.com/first-test-robot-framework/
