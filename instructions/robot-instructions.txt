@@ -10,19 +10,21 @@ ROBOT
 
 3- Install Selenium:
 	- pip3 install robotframework-seleniumlibrary
+	- python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --upgrade robotframework-seleniumlibrary
 	
 	- pip install --upgrade robotframework-seleniumlibrary
 	(https://github.com/robotframework/SeleniumLibrary)
 
 
 4- Install HTTP RequestsLibrary:
-	- pip install robotframework-requests 
+	- pip install robotframework-requests
+	- python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org robotframework-requests
 
 
 5- Install Selenuim Browserdriver for the browsers
 	- Chrome? Firefox? etc.
 	- https://www.selenium.dev/downloads/
-	- Check with your Chome version
+	- Check with your Chrome version
 	- Add it to Path(only folder not the .exe)
 
 
@@ -75,3 +77,16 @@ C:\work\tutorials\robot-framework\demo-project\WebDemo>python demoapp/server.py
 video tutos
 https://www.youtube.com/watch?v=paMrZeoSARM&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=7
 https://testersdock.com/first-test-robot-framework/
+
+
+
+-----------
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the
+following dependency conflicts.
+twisted 18.7.0 requires PyHamcrest>=1.9.0, which is not installed.
+requests 2.19.1 requires urllib3<1.24,>=1.21.1, but you have urllib3 1.26.10 which is incompatible.
+
+
+pip install pywin32
+
+python -m pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org PyHamcrest
